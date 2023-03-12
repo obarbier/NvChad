@@ -43,6 +43,31 @@ M.capabilities.textDocument.completion.completionItem = {
   },
 }
 
+lspconfig.gopls.setup{}
+
+lspconfig.rust_analyzer.setup({
+    on_attach=M.on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            imports = {
+                granularity = {
+                    group = "module",
+                },
+                prefix = "self",
+            },
+            cargo = {
+                buildScripts = {
+                    enable = true,
+                },
+            },
+            procMacro = {
+                enable = true
+            },
+        }
+    }
+})
+
+
 lspconfig.lua_ls.setup {
   on_attach = M.on_attach,
   capabilities = M.capabilities,
