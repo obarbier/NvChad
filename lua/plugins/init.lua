@@ -1,4 +1,7 @@
 local plugins = {
+  -- personal stuff
+  ["fatih/vim-go"] = {},
+  -- nvchad stuff
 
   ["nvim-lua/plenary.nvim"] = { module = "plenary" },
 

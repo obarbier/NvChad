@@ -68,7 +68,7 @@ lspconfig.rust_analyzer.setup({
 })
 
 
-lspconfig.lua_ls.setup {
+lspconfig.sumneko_lua.setup {
   on_attach = M.on_attach,
   capabilities = M.capabilities,
 
