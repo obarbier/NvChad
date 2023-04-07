@@ -1,6 +1,8 @@
 local plugins = {
   -- personal stuff
   ["fatih/vim-go"] = {},
+  ["Shougo/deoplete.nvim"] = {},
+  ["preservim/tagbar"] = {},
   -- nvchad stuff
 
   ["nvim-lua/plenary.nvim"] = { module = "plenary" },
