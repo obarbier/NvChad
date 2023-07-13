@@ -1,6 +1,10 @@
 local plugins = {
   -- personal stuff
-  ["fatih/vim-go"] = {},
+  ["fatih/vim-go"] = {
+    config = function()
+       -- vim.g.go_def_mapping_enabled = 0
+      end,
+  },
   ["Shougo/deoplete.nvim"] = {},
   ["preservim/tagbar"] = {},
   -- nvchad stuff

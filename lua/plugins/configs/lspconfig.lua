@@ -44,7 +44,7 @@ M.capabilities.textDocument.completion.completionItem = {
 }
 
 lspconfig.gopls.setup{}
-
+lspconfig.bufls.setup{}
 lspconfig.rust_analyzer.setup({
     on_attach=M.on_attach,
     settings = {
